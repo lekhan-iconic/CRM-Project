@@ -64,7 +64,7 @@ router.get("/contact/:id", async (req, res) => {
 });
 
 // Update contact route
-router.put("/updatecontact/:id", async (req, res) => {
+router.put("/contacts/:id", async (req, res) => {
   try {
     const id = parseInt(req.params.id);
     const { fname, lname, email, phone, company, jobtitle } = req.body;

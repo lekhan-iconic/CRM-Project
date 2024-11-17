@@ -69,7 +69,7 @@ const UpdateContact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .put(`http://localhost:3000/updatecontact/${id}`, formData)
+      .put(`http://localhost:3000/contacts/${id}`, formData)
       .then((response) => {
         if (response.data.status) {
           navigate("/");

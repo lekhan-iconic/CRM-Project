@@ -68,7 +68,7 @@ const Home = () => {
 
   const handleDelete = (contactId) => {
     axios
-      .delete(`http://localhost:3000/deletecontact/${contactId}`)
+      .delete(`http://localhost:3000/contacts/${contactId}`)
       .then((response) => {
         if (response.data.status) {
           fetchContacts();
